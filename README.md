@@ -10,8 +10,7 @@ Just visit [TrainHack.com](http://trainhack.com/#apply) and submit your applicat
 
 The TrainHack 2014 is being sponsored by:
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+* Sponsors to be announced.
 
 ## Organizing Team
 
