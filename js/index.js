@@ -21,7 +21,7 @@ function onYouTubePlayerAPIReady() {
           'showinfo' : 0,
           'showsearch' : 0,
           'enablejsapi' : 1,
-          'start': 20, 
+          'start': 40, 
           'end': 110,
           'vq': 'hd1080',
           'playlist': VIDEO_ID,
@@ -34,7 +34,15 @@ function onYouTubePlayerAPIReady() {
 }
 
 function onPlayerReady(event) {
-  // event.target.mute();
-  event.target.setVolume(20);
+  $("#player").show();
+  event.target.mute();
   $("#player").css("margin-left", -window.screen.width*.5);
 }
+
+$(function() {
+    $('#typeform-full').attr("src", "https://axsauze.typeform.com/to/GFChYr");
+
+    $('#typeform-full').on('load', function() {
+        setTimeout(function() { $('#typeform-full').show() }, 5000);
+    });
+});

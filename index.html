@@ -69,21 +69,19 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#trainhackers">TrainHackers</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
-                    </li> -->
+                    </li> 
                     <li>
-                        <a class="page-scroll" href="#map">Location</a>
+                        <a class="page-scroll" href="#map">Schedule</a>
                     </li>
                     <li>
                         <a class="page-scroll btn btn-info" href="#apply">Apply Now!</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
     <div id="player-wrapper">
@@ -139,7 +137,7 @@
     <section id="sponsors" class="content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Sponsors!</h2>
+                <h2>SPONSORS</h2>
                 <h4><a href="#team">Become a sponsor</a></h4>
             </div>
         </div>
@@ -185,50 +183,48 @@
     </section> -->
 
     <section id="apply" class="content-section text-center">
-        <div class="row">
-                <h1>Apply now!</h1>
-                <div class="typeform-widget" data-url="https://axsauze.typeform.com/to/GFChYr" data-text="TrainHacks" style="width:100%;height:700px;"></div>
-                <script>
-                (function() {
-                    var qs, js, q, s, d = document,
-                        gi = d.getElementById,
-                        ce = d.createElement,
-                        gt = d.getElementsByTagName,
-                        id = 'typef_orm',
-                        b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-
-                    if (!gi.call(d, id)) {
-                        js = ce.call(d, 'script');
-                        js.id = id;
-                        js.src = b + 'widget.js';
-                        q = gt.call(d, 'script')[0];
-                        q.parentNode.insertBefore(js, q)
-                    }
-                })()
-                </script>
-                <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_GFChYr&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank">Typeform</a></div>
+        <div id="type-form-parent" class="row">
+            <h1>APPLY NOW!</h1>
+            <div class="col-md-6 col-md-offset-3" style="background: white; border-radius: 30px; padding: 10px 10px 10px 10px; height: 700px">
+                <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="" style="display:none;"></iframe>
+            </div>
         </div>
     </section>
 
     <section id="team" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Us</h2>
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>MEET THE TEAM!</h2>
                 <p>Feel free to email if you have any questions! We're looking forward to hear from you!</p>
-                <p><a href="mailto:axsauze@gmail.com">hello@trainhack.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/TrainHack" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">@TrainHacks</span></a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com/TrainHack" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                </ul>
+                <div class="organizer col-md-6">
+                    <a href="https://www.linkedin.com/in/rivertam"><img src="img/river.png" alt="River Tam"/></a>
+                    <h2 itemprop="name">River Tam<br></h2>
+                    <ul itemprop="description">
+                        <li>Has organized 20+ hackathons around the world.</li>
+                        <li>Founder at HackaGlobal and Software Developer at Bloomberg LP.</li>
+                        <li>Had the opportunity to meet Cameron and to discuss entrepreneurial matters with the Duke of York.</li>
+                    </ul>
+                </div>
+                <div class="organizer col-md-6">
+                    <a href="http://www.linkedin.com/pub/alejandro-saucedo/41/6b3/4b0"><img src="img/alejandro.png" alt="Alejandro Saucedo"/></a>
+                    <h2 itemprop="name">Alejandro Saucedo</h2>
+                    <ul itemprop="description">
+                        <li>Has organized 20+ hackathons around the world.</li>
+                        <li>Founder at HackaGlobal and Software Developer at Bloomberg LP.</li>
+                        <li>Had the opportunity to meet Cameron and to discuss entrepreneurial matters with the Duke of York.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
+    <section id="team" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+               <h1>THE JOURNEY</h1>
+            </div>
+        </div>
+    </section>
     <div id="map"></div>
 
     <script src="js/jquery.js"></script>

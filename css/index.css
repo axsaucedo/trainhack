@@ -11,4 +11,44 @@
 #player {
 	position: fixed; 
 	z-index: -99; 
+	display: none;
 }
+
+
+.organizer {
+  float: left;
+  display: block;
+  margin: 30px 0;
+  text-align: center; }
+  .organizer img {
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    position: relative; }
+  .organizer h2 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-right: 0; }
+  .organizer ul {
+    display: block;
+    margin: 20px 0px;
+    padding: 0px 5%;
+    list-style: none; }
+  .organizer li {
+    padding: 10px 0px;
+    text-align: justify; }
+
+
+.team {
+  position: relative;
+  z-index: 10;
+  padding: 67px 0px 30px 0px;
+  color: white;
+  background-color: black;
+  width: 100%;
+  zoom: 1; }
+  .team:before, .team:after {
+    content: "";
+    display: table; }
+  .team:after {
+    clear: both; }
