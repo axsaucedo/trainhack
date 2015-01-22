@@ -14,6 +14,9 @@
 	display: none;
 }
 
+.social-buttons-list {
+  clear: both;
+}
 
 .organizer {
   float: left;
@@ -28,7 +31,8 @@
   .organizer h2 {
     margin-top: 15px;
     margin-bottom: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    height: 50px; }
   .organizer ul {
     display: block;
     margin: 20px 0px;
@@ -37,6 +41,10 @@
   .organizer li {
     padding: 10px 0px;
     text-align: justify; }
+
+  .organizer-description {
+    height: 200px;
+  }
 
 
 .team {

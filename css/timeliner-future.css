@@ -2,7 +2,7 @@
 /* ======= DEMO LAYOUT ======= */
 
 #timeline h1 {
-  color: #7DBADF;
+  color: #219ab3;
   font-size: 26px;
   font-weight: 400;
   margin: 0;
@@ -23,7 +23,7 @@
   text-decoration: none;
 }
 #timeline a:hover {
-  color: #7DBADF;
+  color: #219ab3;
 }
 #timeline a img {
   border: none;
@@ -78,12 +78,12 @@
   color: #78a8b2;
 }
 .timeline-container {
-  border-left: 4px solid rgba(0, 69, 121, 0.65);
+  border-left: 4px solid rgba(33, 154, 179, 0.65);
   margin: 20px auto;
   width: 900px;
 }
 .timeline-container-tick {
-  background: rgba(0, 69, 121, 0.65);
+  background: rgba(33, 154, 179, 0.65);
   content: "";
   display: block;
   height: 4px;
@@ -92,7 +92,7 @@
   position: relative;
 }
 .timeline-container::before {
-  background: rgba(0, 69, 121, 0.65);
+  background: rgba(33, 154, 179, 0.65);
   content: "";
   display: block;
   height: 4px;
@@ -102,7 +102,7 @@
   top: -4px;
 }
 .timeline-container::after {
-  background: rgba(0, 69, 121, 0.65);
+  background: rgba(33, 154, 179, 0.65);
   content: "";
   display: block;
   height: 4px;
@@ -112,7 +112,7 @@
   top: 4px;
 }
 .timeline-toggle {
-  background: rgba(23, 66, 98, 0.65);
+  background: rgba(33, 154, 179, 0.65);
   border: 0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -143,7 +143,7 @@
   width: 900px;
 }
 .timeline-wrapper .timeline-time::before {
-  border-top: 4px solid rgba(0, 69, 121, 0.65);
+  border-top: 4px solid rgba(33, 154, 179, 0.65);
   content: "";
   display: inline-block;
   height: 4px;
@@ -165,7 +165,7 @@
 }
 
 .timeline-wrapper .timeline-time span {
-  background: rgba(0, 69, 121, 0.65);
+  background: rgba(33, 154, 179, 0.65);
   -moz-border-radius: 10px;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.85);
@@ -175,11 +175,11 @@
   text-align: center;
 }
 .timeline-wrapper .timeline-time span:hover {
-  background: rgba(0, 69, 121, 0.95);
-  -webkit-transition: background 0.2s ease-in;
-  -moz-transition: background 0.2s ease-in;
-  -o-transition: background 0.2s ease-in;
-  transition: background 0.2s ease-in;
+  background: rgba(33, 154, 179, 0.65);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .timeline-series {
   clear: left;
@@ -190,7 +190,7 @@
   width: 880px;
 }
 .timeline-series dt::before {
-  border-top: 3px solid rgba(0, 69, 121, 0.65);
+  border-top: 3px solid rgba(33, 154, 179, 0.65);
   content: "";
   display: inline-block;
   height: 3px;
@@ -216,7 +216,7 @@
   margin-left: 0;
 }
 .timeline-series dt a .open {
-  color: #7DBADF;
+  color: #219ab3;
 }
 .timeline-series dt a:hover {
   color: rgba(255, 255, 255, 0.6);
@@ -238,7 +238,7 @@
   white-space: nowrap;
 }
 .tick {
-  background: rgba(0, 69, 121, 0.65);
+  background: rgba(33, 154, 179, 0.65);
   clear: both;
   display: block;
   height: 2px;
