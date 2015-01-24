@@ -18,6 +18,15 @@
   clear: both;
 }
 
+#partners .container {
+  background: rgba(255, 255, 255, .5);
+}
+
+#partners .img-responsive {
+  min-width: 90%;
+  max-width: 90%;
+}
+
 .organizer {
   float: left;
   display: block;
