@@ -45,4 +45,29 @@ $(function() {
     $('#typeform-full').on('load', function() {
         setTimeout(function() { $('#typeform-full').show() }, 5000);
     });
+
+
+    var clock;
+    var now       = new Date();
+    var deadline  = new Date(2015, 01, 01, 12);
+
+    var dif = deadline.getTime() - now.getTime()
+
+    var seconds_left = dif / 1000;
+    console.log(now, deadline)
+    console.log(seconds_left);
+    
+    $(document).ready(function() {
+        var clock;
+
+        clock = $('.clock').FlipClock({
+            clockFace: 'DailyCounter',
+            autoStart: true
+        });
+                
+        clock.setTime(seconds_left);
+        clock.setCountdown(true);
+        clock.start();
+
+    });
 });
