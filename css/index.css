@@ -1,5 +1,7 @@
 html, body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
+  margin: auto auto;
+  width: 98%;
 }
 
 #player-wrapper {
