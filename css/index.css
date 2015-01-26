@@ -1,7 +1,5 @@
-html, body {
-  /*overflow-x: hidden;*/
-  margin: auto auto;
-  width: 98%;
+.partners-container {
+  width: 100%;
 }
 
 #player-wrapper {
