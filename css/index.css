@@ -2,6 +2,17 @@
   width: 99%;
 }
 
+#about {
+    padding-top: 100px;
+}
+#journey {
+    margin-bottom: 350px;
+}
+#timeline {
+  margin-top: -300px;
+  margin-bottom: 150px;
+}
+
 .partners-container {
   width: 100%;
 }
