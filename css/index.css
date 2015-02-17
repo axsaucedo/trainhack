@@ -2,6 +2,17 @@
   width: 99%;
 }
 
+#about {
+    padding-top: 100px;
+}
+#journey {
+    margin-bottom: 350px;
+}
+#timeline {
+  margin-top: -300px;
+  margin-bottom: 150px;
+}
+
 .partners-container {
   width: 100%;
 }
@@ -24,15 +35,22 @@
 .social-buttons-list {
   clear: both;
 }
+#partners .organisational {
+  padding-top: 0px;
+}
 
 #partners .container {
+  margin-top: 30px;
+  padding: 30px 0;
   background: rgba(255, 255, 255, .5);
+  text-align: center;
 }
 
 #partners .img-responsive {
-  min-width: 90%;
+  margin: 20px 0;
   max-width: 90%;
-}
+} 
+
 
 .organizer {
   float: left;
