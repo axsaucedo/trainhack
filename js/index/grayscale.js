@@ -17,6 +17,7 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+    console.log("lol")
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
