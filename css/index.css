@@ -20,8 +20,8 @@
 #player-wrapper {
 	position: fixed;
 	z-index: -99;
-	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%);
+	filter: sepia(100%);
+	-webkit-filter: sepia(100%);
 	background: black;
 	opacity: 0.4;
 }

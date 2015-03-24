@@ -7,7 +7,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubePlayerAPIReady() {
   
-  var VIDEO_ID = 'TmsozWDwz_A';
+  var VIDEO_ID = 'hZwrOelxA2s';
 
   player = new YT.Player('player', {
       height: window.screen.height*1.3,
@@ -21,8 +21,7 @@ function onYouTubePlayerAPIReady() {
           'showinfo' : 0,
           'showsearch' : 0,
           'enablejsapi' : 1,
-          'start': 40, 
-          'end': 110,
+          'start': 0,
           'vq': 'hd1080',
           'playlist': VIDEO_ID,
       },
