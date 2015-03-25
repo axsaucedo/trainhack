@@ -108,6 +108,30 @@ ul {
   font-size: 100px;
 }
 
+.prize-title {
+  text-align: center;
+  font-size: 100px;
+}
+.subprize-title {
+  text-align: center;
+  font-size: 50px;
+}
+.subprize-subtitle {
+  text-align: center;
+}
+ 
+ #prizes .content-area {
+  height: 400px;
+ }
+
+ #prizes .content-area ul {
+  text-align: center;
+ }
+ #prizes .content-area ul li {
+  list-style-type: none;
+  font-size: 25px;
+ }
+
 .faqSection {
   -webkit-box-shadow:0 0 30px white; 
   -moz-box-shadow: 0 0 30px white; 
@@ -167,7 +191,7 @@ p {
   clear: both; }
 
 #particles-js {
-  background: #000033;
+  background: #000;
   position: fixed;
   z-index: -1;
   width: 100%;
@@ -176,6 +200,18 @@ p {
   left: 0; 
 }
 
+#apis .content-area {
+  padding-bottom: 100px;
+}
+#apis ul {
+  width: 80%;
+  margin: auto auto;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+#apis li {
+  margin-bottom: 10px;
+}
 
 
 @media only screen and (min-width: 1300px) {
