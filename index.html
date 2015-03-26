@@ -55,6 +55,28 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+<div style="color: black" id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">We'd Love to Hear From You</h3>
+      </div>
+      <div class="modal-body">
+        <form action="MAILTO:axsauze@gmail.com" method="post" enctype="text/plain" class="form-horizontal col-sm-12">
+          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" name="name" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+          <div class="form-group"><label>E-Mail</label><input name="mail" class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+          <div class="form-group"><label>Message</label><textarea name="comment" class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -97,7 +119,7 @@
                         <a class="page-scroll" href="#prizes">Prizes</a>
                     </li>
                     <li>
-                        <a href="mailito:river@hacktrain.com" class="btn btn-info">
+                        <a data-toggle="modal" href="#myModal" role="button" class="btn btn-info">
                           Contact Us
                         </a>
                       </li>
@@ -125,7 +147,7 @@
                         <br><br><br>
                         <p class="intro-text">40 hackers, 4 cities, 200km/h - 3 days to build revolutionary startups, whilst hacking on a train!</p>
                         <br>
-                            <a href="mailito:river@hacktrain.com" class="btn btn-default btn-lg"> <span class="network-name">Contact Us</span></a>
+                            <a  href="#myModal" role="button"  data-toggle="modal" class="btn btn-default btn-lg"> <span class="network-name">Contact Us</span></a>
                             <br>
 
                             <br>
