@@ -114,15 +114,22 @@ body {
         vertical-align: bottom;
         text-align: center;
         color: black;
-        font-size: 12em;
+        font-size: 4em;
+       -webkit-text-stroke-width: 2px;
+       -webkit-text-stroke-color: white;
+    }
+    .prize-img {
+        background-size: cover; 
+        background-position: 100% 100%;
     }
     .prize-header-img {
+        background-image: url(../img/2015/hacktrain-2015-winners.jpg);
         height: 100%;
-        width: 100%;
-        background-image: url(../img/2015/hacktrain-2015-winners.jpg); 
+        width: 100%; 
         background-size: cover; 
         background-position: 100% 20%;
-        filter: blur(3px);
+        filter: blur(5px);
+        -webkit-filter: blur(3px);
         position: absolute;
         top: 0px;
         bottom: 0px;
