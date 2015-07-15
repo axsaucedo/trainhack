@@ -17,6 +17,10 @@ html {
     height: 100%;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 h1,
 h2,
 h3,
