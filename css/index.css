@@ -23,13 +23,18 @@ body {
 	filter: sepia(100%);
 	-webkit-filter: sepia(100%);
 	background: black;
-	opacity: 0.4;
+	opacity: 0.2;
 }
 
 #player {
 	position: fixed;
 	z-index: -99;
 	display: none;
+}
+
+#gadgets .img-responsive {
+  max-height: 150px;
+  margin-top: 100px;
 }
 
 .social-buttons-list {
