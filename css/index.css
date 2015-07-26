@@ -8,6 +8,16 @@ body {
 #about {
     padding-top: 100px;
 }
+#about .img-container {
+  height: 70px;
+
+}
+#about .img-container img {
+  width: 100%;
+  max-height: 50px;
+
+}
+
 #timeline {
   margin-top: -300px;
   margin-bottom: 150px;
