@@ -39,10 +39,10 @@ function onPlayerReady(event) {
 }
 
 $(function() {
-    $('#typeform-full').attr("src", "https://axsauze.typeform.com/to/GFChYr");
+    $('#typeform-full').attr("src", "https://hackpartners.typeform.com/to/pvSvMG");
 
     $('#typeform-full').on('load', function() {
-        setTimeout(function() { $('#typeform-full').show() }, 5000);
+        setTimeout(function() { $('#typeform-full').show() }, 2000);
     });
 
 
