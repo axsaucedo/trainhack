@@ -1,6 +1,9 @@
 body {
   overflow-x: hidden
 }
+html {
+  overflow-x: hidden;
+}
 .container-wide {
   width: 99%;
 }
