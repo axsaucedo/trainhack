@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A hackathon on a train, a railway accelerator, and an innitiative to innovate the railway industry.">
+    <meta name="author" content="Hack Partners">
+    <link rel="shortcut icon" href="img/index/hacktrain-icon-black.png">
+
+    <!-- Facebook Metatags -->
+    <meta property="og:title" content="HackTrain - Hacking on Rails" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://hacktrain.com" />
+    <meta property="og:image" content="http://hacktrain.com/img/index/journey-trainhack.jpg" />
+    <meta property="og:description" content="HackTrain is the first ever train hackathon in Europe! Apply for the craziest hackathon ever departing 27th March." />
+    <!-- Twitter Metatags -->
+    <meta name="twitter:card" content="HackTrain">
+    <meta name="twitter:site" content="@TheHackTrain">
+    <meta name="twitter:title" content="HackTrain - Hacking on Rails">
+    <meta name="twitter:description" content="HackTrain is the first ever train hackathon in Europe! Apply for the craziest hackathon ever departing 27th March.">
+    <meta name="twitter:image" content="http://hacktrain.com/img/index/journey-trainhack.jpg">
+
+    <title>HackTrain - Hack the Rails</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom GRAYSCALE CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- Timeline Dependencies -->
+    <!-- <link rel="stylesheet" href="css/timeliner.css" type="text/css" media="screen"> -->
+    <link rel="stylesheet" href="css/timeliner-future.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/flipclock.css" type="text/css" media="screen">
+    <!-- <link rel="stylesheet" href="js/venobox.css" type="text/css" media="screen"> -->
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<div style="color: black" id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">We'd Love to Hear From You</h3>
+      </div>
+      <div class="modal-body">
+        <form action="MAILTO:river@hacktrain.com" method="post" enctype="text/plain" class="form-horizontal col-sm-12">
+          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" name="name" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+          <div class="form-group"><label>E-Mail</label><input name="mail" class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+          <div class="form-group"><label>Message</label><textarea name="comment" class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">
+                    <span><img alt="hacktrain" src="img/index/hacktrain-icon-white.png" style="width: 80px; margin-top: -10px" /></span>
+                    <span class="light">HackTrain</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a alt="home" href="/"></a>
+                    </li>
+                    <li>
+                        <a alt="about" class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a alt="partners" class="page-scroll" href="#sponsors">Partners</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="/accelerator.html">Accelerator</a>
+                    </li> -->
+                    <li>
+                        <a alt="2015 journey" class="page-scroll" href="/2015.html">2015 Journey</a>
+                    </li>
+                    <li>
+                        <a alt="contact us" data-toggle="modal" href="#myModal" role="button">
+                          Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a alt="apply now" class="page-scroll" href="#apply" role="button" class="btn btn-info">
+                          Apply now
+                        </a>
+                     </li><!-- 
+                    <li style="width: 150px; position: relative;">
+                      <a href="http://bloomberg.com/RD">
+                        <img style="margin: auto auto; width: 100%; position: absolute; margin-top: -10px" class="img-responsive" src="img/index/bloomberg-logo-powered.png"/>
+                      </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="player-wrapper">
+        <div id="player"></div>
+    </div>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img  alt="the hacktrain" class="light" style="width: 70%; padding-top:80px" src="img/index/hacktrain-logo-white-dates-nov-2015.png"/>
+                        <br><br><br>
+                        <br>
+                            <!-- <a  href="#myModal" role="button"  data-toggle="modal" class="btn btn-default btn-lg">  -->
+                            <!-- <a  href="/2015.html" class="btn btn-default btn-lg"> 
+                              <span class="network-name">Hackathon</span>
+                            </a>
+                            <p></p> -->
+                            <!-- <a  href="/accelerator.html" class="btn btn-default btn-lg"> 
+                              <span class="network-name">Accelerator</span>
+                            </a> -->
+                            <br>
+
+                            <br>
+                    </div>
+                </div>
+            </div>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; color: black; clear:left; font:14px Helvetica,Arial,sans-serif; }
+</style>
+<div id="mc_embed_signup">
+<form action="//hackpartners.us10.list-manage.com/subscribe/post?u=61b1323da1c42241d5d551eea&amp;id=5316f2aa29" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <h2>Subscribe to our mailing list</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+    <label for="mce-FNAME">First Name </label>
+    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+    <label for="mce-LNAME">Last Name </label>
+    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_61b1323da1c42241d5d551eea_5316f2aa29" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+        </div>
+    </header>
+
+
+
+    <!-- <div id="map"></div> -->
+
+    <script src="js/external/jquery.js"></script>
+
+    <script src="js/external/bootstrap.min.js"></script>
+
+    <script src="js/external/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/index/grayscale.js"></script>
+
+    <!-- Timeline dependencies -->
+    <script type="text/javascript" src="js/external/timeliner.js"></script>
+    <script type="text/javascript" src="js/external/venobox.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65616946-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- Custom Trainhacks JavaScript -->
+    <script src="js/index/index.js"></script>
+
+</body>
+
+</html>
