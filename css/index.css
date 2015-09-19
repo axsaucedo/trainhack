@@ -118,6 +118,11 @@ html {
   .team:after {
     clear: both; }
 
+    /*HACKATHONS*/
+    #hackathons .img-container {
+
+      height: 150px;
+    }
 
 
   /* WINNERS */
