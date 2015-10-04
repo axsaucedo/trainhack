@@ -108,9 +108,8 @@
                         <a alt="HackTrain News" href="http://news.hacktrain.com">News</a>
                     </li>
                     <li>
-                        <a alt="contact us" data-toggle="modal" href="mailito:hello@hackpartners.com" role="button">
-                          Contact us
-                        </a>
+                        <a alt="contact us" type="submit" onclick="document.getElementById('contact-us-form').submit()">Contact Us</a>
+                        <form id="contact-us-form" target="_blank" action="MAILTO:hello@hackpartners.com" method="post" enctype="text/plain" class="form-horizontal col-sm-12"></form>
                     </li>
                     <li>
                         <a alt="apply now" class="btn btn-default" href="https://hackpartners.typeform.com/to/pvSvMG" role="button" class="btn btn-info">
