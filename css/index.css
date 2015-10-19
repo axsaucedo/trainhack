@@ -172,3 +172,95 @@ html {
     .prize-description {
         text-align: center;
     }
+
+
+  body {
+    font-family: Ubuntu;
+  }
+  section {
+    clear: both;
+  }
+  #schedule {
+    margin-bottom: 100px;
+  }
+  #schedule .tab-content .col-md-3 {
+    border-top: 5px solid white;
+    padding: 20px;
+  }
+  #schedule .tab-content .col-md-9 {
+    border-top: 1px solid gray;
+    padding: 20px;
+  }
+  #schedule .tab-content .title {
+    font-size: 25px;
+  }
+  #schedule .tab-content .subtitle {
+    font-size: 15px;
+  }
+  #schedule .tab-content p {
+    margin-bottom: 0px;
+  }
+  #schedule .tab-content .time {
+    font-size: 15px;
+
+  }
+  #schedule .schedule-title {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+  }
+  li[role="presentation"] {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+
+section[name="prizes"] {
+
+  -moz-transform: scale(0.9999);
+  border-bottom: 90px solid transparent;
+  border-top: 90px solid transparent;
+  box-sizing: content-box;
+}
+
+section[name="prizes"] h1 {
+  text-align: center;
+}
+
+section[name="prizes"] h4 {
+  padding: 30px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+section[name="prizes"] img {
+  background-color: #383838;
+  border-radius: 50%;
+  border: 1px solid #383838;
+}
+
+section[name="prizes"] .gadget {
+  padding-bottom: 25px;
+}
+
+section[name="prizes"] .main img {
+  width: 150px;
+  height: 150px;
+}
+
+section[name="prizes"] .gadget img {
+  width: 135px;
+  height: 135px;
+}
+
+section[name="prizes"] p.name {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+section[name="prizes"] p.desc {
+  font-weight: 300;
+  font-size: 15px;
+  max-width: 220px;
+  opacity: 0.8;
+}

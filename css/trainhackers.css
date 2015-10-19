@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Ubuntu;
 }
 
+section {
+  clear:both;
+}
 
 h1.special {
   font-size: 5em;
@@ -212,7 +215,6 @@ p {
 #apis li {
   margin-bottom: 10px;
 }
-
 
 @media only screen and (min-width: 1300px) {
   .faqSection {
