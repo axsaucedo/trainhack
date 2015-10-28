@@ -264,3 +264,7 @@ section[name="prizes"] p.desc {
   max-width: 220px;
   opacity: 0.8;
 }
+
+#sponsor .img-container {
+  height: 150px;
+}
