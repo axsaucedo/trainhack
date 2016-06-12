@@ -9,17 +9,17 @@ html {
 }
 
 .videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.videoWrapper iframe {
+  position: fixed;
+  background: black;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: url(/img/index/ht.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -99;
 }
 
 #about {
@@ -45,12 +45,6 @@ html {
 }
 
 #player-wrapper {
-	position: fixed;
-	z-index: -99;
-	filter: sepia(100%);
-	-webkit-filter: sepia(100%);
-	background: black;
-	opacity: 0.2;
 }
 
 #player {
@@ -115,6 +109,96 @@ html {
 
   .organizer-description {
     height: 200px;
+  }
+
+.ht-main-description {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+  .process-number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    border: 6px solid #fff;
+    border-radius: 80px;
+    font-weight: 900;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+  }
+  .process-container {
+      width: 100%; 
+      background: black;
+      clear: both;
+      position: relative;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+  }
+  .process-item {
+      height: 500px;
+      position: relative;
+      padding: 0 0 0 0;
+  }
+  .process-background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-position: center;
+      background-size: cover;
+
+      transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+  }
+  .process-title {
+      font-size: 50px;
+      position:absolute; 
+      top: 85%; 
+      height: 10em; 
+      margin-top: -5em;
+      width: 100%;
+      opacity: 1;
+
+      transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+  }
+  .process-description {
+      opacity: 0;
+      font-size: 25px;
+      position:absolute; 
+      top:50%; 
+      height:10em; 
+      margin-top:-5em;
+      padding: 0 20px 0 20px;
+
+      transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+
+  }
+  .process-item:hover .process-background {
+      top: -10px;
+      bottom: -10px;
+      right: -10px;
+      left: -10px;
+  }
+  .process-item:hover .process-title {
+      opacity: 0;
+  }
+  .process-item:hover .process-description {
+      opacity: 1;
   }
 
 

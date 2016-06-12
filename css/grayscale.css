@@ -48,6 +48,10 @@ p {
     }
 }
 
+.link-underline {
+    text-decoration: underline;
+}
+
 a {
     color: #219ab3;
     -webkit-transition: all .2s ease-in-out;
@@ -57,8 +61,7 @@ a {
 
 a:hover,
 a:focus {
-    text-decoration: none;
-    color: #11505d;
+    color: #1EB9E2;
 }
 
 .light {
