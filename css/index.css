@@ -111,7 +111,8 @@ html {
     height: 200px;
   }
 
-.ht-main-description {
+.ht-main-description,
+  .trainhacker-description {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
