@@ -68,6 +68,26 @@ a:focus {
     font-weight: 400;
 }
 
+.emphasise {
+    color:#219ab3;
+    font-size:1.5em;
+}
+.theme-title {
+    -ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+.theme-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -256,6 +276,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .download-section {
