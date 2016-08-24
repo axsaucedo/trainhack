@@ -17,6 +17,10 @@ html {
     height: 100%;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 h1,
 h2,
 h3,
@@ -44,6 +48,10 @@ p {
     }
 }
 
+.link-underline {
+    text-decoration: underline;
+}
+
 a {
     color: #219ab3;
     -webkit-transition: all .2s ease-in-out;
@@ -53,12 +61,31 @@ a {
 
 a:hover,
 a:focus {
-    text-decoration: none;
-    color: #11505d;
+    color: #1EB9E2;
 }
 
 .light {
     font-weight: 400;
+}
+
+.emphasise {
+    color:#219ab3;
+    font-size:1.5em;
+}
+.theme-title {
+    -ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+.theme-container ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .navbar-custom {
@@ -249,6 +276,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .download-section {

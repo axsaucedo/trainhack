@@ -6,21 +6,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="An initiative to drive innovation forward in the railway industry through the HackTrain cycle.">
+    <meta name="author" content="Hack Partners">
+    <link rel="shortcut icon" href="img/index/hacktrain-icon-black.png">
 
     <!-- Facebook Metatags -->
-    <meta property="og:title" content="HackTrain - Hacking on Rails" />
+    <meta property="og:title" content="HackTrain - Join us!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://hacktrain.com" />
-    <meta property="og:image" content="http://hacktrain.com/img/index/journey-trainhack.jpg" />
-    <meta property="og:description" content="HackTrain is the first ever train hackathon in Europe! Apply for the craziest hackathon ever departing 27th March." />
+    <meta property="og:description" content="The HackTrain is a platform that drives forward innovation in the railway industry through #RailTech." />
+    <meta property="og:image" content="http://hacktrain.com/img/index/ht-light.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1500" />
+    <meta property="og:image:height" content="1500" />
     <!-- Twitter Metatags -->
-    <meta name="twitter:card" content="HackTrain">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@TheHackTrain">
-    <meta name="twitter:title" content="HackTrain - Hacking on Rails">
-    <meta name="twitter:description" content="HackTrain is the first ever train hackathon in Europe! Apply for the craziest hackathon ever departing 27th March.">
-    <meta name="twitter:image" content="http://hacktrain.com/img/index/journey-trainhack.jpg">
+    <meta name="twitter:creator" content="@HackPartners">
+    <meta name="twitter:title" content="HackTrain - Join us!">
+    <meta name="twitter:description" content="The HackTrain is a platform that drives forward innovation in the railway industry through #RailTech.">
+    <meta name="twitter:image" content="http://hacktrain.com/img/index/ht-light.jpg" />
 
     <title>HackTrain - Hack the Rails</title>
 
@@ -55,6 +60,28 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+<div style="color: black" id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">We'd Love to Hear From You</h3>
+      </div>
+      <div class="modal-body">
+        <form action="MAILTO:hello@hackpartners.com" method="post" enctype="text/plain" class="form-horizontal col-sm-12">
+          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" name="name" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+          <div class="form-group"><label>E-Mail</label><input name="mail" class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+          <div class="form-group"><label>Message</label><textarea name="comment" class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -62,8 +89,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <span><img src="img/index/hacktrain-icon-white.png" style="width: 80px; margin-top: -10px" /></span>
+                <a class="navbar-brand page-scroll" href="/">
+                    <span><img alt="hacktrain" src="img/index/hacktrain-just-logo.png" style="width: 80px; margin-top: -10px" /></span>
                     <span class="light">HackTrain</span>
                 </a>
             </div>
@@ -71,36 +98,23 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                    <li>
+                        <a class="page-scroll" href="hackathon-3.html">Hackathon</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#sponsors">Partners</a>
+                        <a class="page-scroll" href="http://accelerator.hacktrain.com">Accelerator</a>
                     </li>
                     <!-- <li>
-                        <a class="page-scroll" href="#speakers">Speakers</a>
+                        <a alt="HackTrain Report" href="http://conference.hacktrain.com">Conference</a>
+                    </li> -->
+                    <li>
+                        <a alt="contact us" href="http://report.hacktrain.com">Report</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#judges">Judges</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#trainhackers">TrainHackers</a>
-                    </li>-->
-                    <li>
-                        <a class="page-scroll" href="#journey">Journey</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#prizes">Prizes</a>
-                    </li>
-                    <li style="width: 150px; position: relative;">
-                      <a href="http://bloomberg.com/RD">
-                        <img style="margin: auto auto; width: 100%; position: absolute; margin-top: -10px" class="img-responsive" src="img/index/bloomberg-logo-powered.png"/>
-                      </a>
-                    </li>
+                        <a alt="apply now" class="btn btn-default" href="http://accelerator.hacktrain.com/contact/" role="button" class="btn btn-info">
+                            Contact us
+                        </a>
+                     </li>
                 </ul>
             </div>
         </div>
@@ -116,734 +130,376 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <img class="light" style="width: 70%; padding-top:80px" src="img/index/hacktrain-logo-white-dates.png"/>
-                        <br><br><br>
-                        <p class="intro-text">40 hackers, 4 cities - 3 days to build revolutionary startups, whilst hacking on a train!</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        <img  alt="the hacktrain" class="light" style="width: 60%; padding:80px 0 80px" src="img/index/hacktrain-logo-white-dates-nov-2015.png"/>
                     </div>
                 </div>
             </div>
+
 
             <ul class="list-inline banner-social-buttons col-sm-12">
                 <li class="col-sm-6">
-                    <a href="https://twitter.com/TheHackTrain" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">@ TheHackTrain</span></a>
+                    <a alt="twitter" href="https://www.youtube.com/watch?v=lFTGZnouRzo" class="btn btn-default btn-lg"> <span style="font-size:23px" class="network-name">Hacktrain Case Study</span></a>
                 </li>
 
                 <li class="col-sm-6">
-                    <a href="https://facebook.com/TheHackTrain" class="btn btn-default btn-lg col-sm 6"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">/ TheHackTrain</span></a>
+                    <a alt="facebook" href="http://report.hacktrain.com" class="btn btn-default btn-lg col-sm 6"> <span style="font-size:23px" class="network-name">B.A.R.R.I.E.R.S. Report</span></a>
                 </li>
             </ul>
+
+             <section id="about" class="container content-section text-center">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2">
+                <p>
+                    <h2 style="font-size:20px">As seen in:</h2>
+                     <div class="container col-xs-12">
+                        <div class="col-xs-3 img-container">
+                          <a href="http://www.theguardian.com/politics/2015/nov/19/transport-hackathon-hacktrain-uk-railways">
+                            <img style="margin: auto auto" class="img-responsive" src="https://upload.wikimedia.org/wikipedia/pms/e/e4/The_Guardian_logo.png"/>
+                          </a>
+                        </div>
+                        <div class="col-xs-3 img-container">
+                          <a href="https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiKh4iGkavJAhWL1xoKHTihDa0QFgggMAA&url=http%3A%2F%2Fwww.ft.com%2Fcms%2Fs%2F0%2F1553f5ac-8ea2-11e5-8be4-3506bf20cc2b.html&usg=AFQjCNHP2edj4_pUXdSxFpBfAMYCiwaZPw">
+                            <img style="margin: auto auto" class="img-responsive" src="https://d24j9r7lck9cin.cloudfront.net/l/o/1/1556.1405339452.png"/>
+                          </a>
+                        </div>
+                        <div class="col-xs-3 img-container">
+                            <a  style="width: 100%;" href="http://www.railengineer.uk/2016/03/24/railtech-and-the-hacktrain-accelerator/">
+                                <img style="width: 100%;" src="img/index/logo-re.png"/>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 img-container">
+                            <a  style="width: 100%;" href="http://railway-news.com/railway-news-hacktrain-conference/">
+                                <img style="width: 100%;" src="img/index/logo-rn.png"/>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 img-container">
+                          <a href="http://bloomberg.com/rd/hacktrain">
+                            <img style="margin: auto auto" class="img-responsive" src="img/index/bloomberg-logo.png"/>
+                          </a>
+                        </div>
+                        <div class="col-xs-3 img-container">
+                            <a  style="width: 100%;" href="http://nomad-digital.com/latest/press-releases/nomad-digital-sponsors-hacktrain-on-a-truly-innovative-journey/">
+                                <img style="width: 100%;" src="img/index/logo-nomad.png"/>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 img-container">
+                            <a  style="width: 100%;" href="http://techcitynews.com/2015/04/01/cheap-travel-app-reroo-wins-europes-first-train-hack/">
+                                <img style="width: 100%; margin: auto auto;" src="http://techcitynews.com/wp-content/themes/techcitynews-v2/images/tcn_logo_210x30.png"/>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 img-container">
+                            <a  style="width: 100%;" href="http://www.smartrailworld.com/how-hacking-the-rails-is-helping-shake-up-the-rail-industry">
+                                <img style="width: 100%;" src="img/index/smart-rail-world1.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </section>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
+    <div style="margin:0 auto; width: 60%;">
+      <div class="videoWrapper">
+        
+      </div>
+    </div>
 
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>An Experience Like No Other.</h2>
-                <p>
-                    HackTrain is the first ever train hackathon in Europe! An unforgettable experience where 40 of the best developers from all around Europe will revolutionize the world! Jump on board the HackTrain for a once in a lifetime journey, travel to the top tech spaces in the UK, hang out with the market makers in the Startup ecosystem, and create startups that will revolutionize the world!
-                </p>
-                <p>
-                    Startups, apps, prototypes will be created, and presented in front of CEOs, investors, serial entrepreneurs and evangelists - all with the objective of becoming the 2015 HackTrain champion! With TrainHackers from UK, Russia, Romania, France, Poland, Czech Republic together with many other European countries, this hackathon will certainly promise a unique experience!
-                </p>
-                <p>
-                    Crazy? Definitely! Impossible? Not even close! Many individuals rocked our past events, creating mind blowing and revolutionary concepts! Some of our past events include <a href="http://uk.startupbus.com/">Startup Bus UK 2014</a>, <a href="http://moscow.startupweekend.org/">Startup Weekend Moscow</a>, <a href="https://twitter.com/startuphacksco/">Startup Hacks</a>.
-                </p>
-                <p>
-                    Thanks to our strong partnership with the largest train companies in the UK, including East Midland Trains and Virgin Trains East Coast, hackers will be turning pizza into software whilst on an executive First Class Journey!
-                </p>
-            </div>
+    <br>
+    <br>
+    <br>
 
-            <div style="" class="container col-lg-8 col-lg-offset-2">
-                <div class="container col-sm-12">
-                    <div class="col-sm-6 img-container">
-                        <a  style="width: 100%;" href="http://www.eastmidlandstrains.co.uk/">
-                            <img style="width: 100%;" src="img/index/logo-emt.png"/>
-                        </a>
+    <div class="row ht-main-description">
+        <div class="col-lg-4 col-lg-offset-2">
+            <h2>
+                <font style="color:#219ab3;">   
+                    <i style="font-size:2em;">HackTrain:</i>
+                    <div style="font-size:1em; text-align: left; padding-left: 70px; padding-top: 10px">
+                        /'hak'treɪn/
+                        <br>
+                        noun.
                     </div>
-                    <div class="col-sm-6 img-container">
-                        <a  style="width: 100%;" href="http://www.virgintrainseastcoast.com/">
-                            <img style="width: 70%;" src="img/index/logo-VTEC.png"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                </font> 
+            </h2>
         </div>
-    </section>
-
-    <section id="sponsors" class="content-section text-center">
-        <div style="width: 90%; margin: auto auto;" class="row">
-            <div class="container col-lg-8 col-lg-offset-2">
-                <h2>Headline Sponsor</h2>
-          <div class="col-sm-12 img-container">
-            <a href="http://bloomberg.com/RD">
-              <img style="margin: auto auto" class="img-responsive" src="img/index/bloomberg-logo.png"/>
-            </a>
-          </div>
+        <div class="col-md-4" style="font-size: 1.3em; text-align: left; padding-top: 10px;">
+                The HackTrain is a platform that introduces technology innovation to the railway industry through a proven <a href="#innovation-process" class="link-underline">3-step innovation cycle</a>. We are a group of visionary innovators with the mission to make the UK the leading hub for <a href="http://news.hacktrain.com/what-is-railtech/" class="link-underline">#RailTech innovation</a>. 
+            <br><br>
+            <b>
+                <b>We have relased the B.A.R.R.I.E.R.S. report</b> <a href="http://report.hacktrain.com" class="link-underline">Check it out >></a>
+            </b>
         </div>
-        <div style="padding-top:250px;" class="container col-lg-12">
-            <h2>Golden Sponsors</h2>
-            <div class="container col-sm-12 col-md-8 col-md-offset-2">
-                <div class="col-sm-6 img-container">
-                    <a  style="width: 100%;" href="http://www.accenture.com/">
-                        <img style="width: 100%; margin: auto auto;" src="img/index/accenture.png"/>
-                    </a>
-                </div>
-                <div class="col-sm-6 img-container">
-                    <a  style="width: 100%;" href="http://www.thetrainline.co.uk/">
-                        <img style="width: 100%; margin: auto auto;" src="img/index/logo-ttl.png"/>
-                    </a>
-                </div>
-              </div>
-            <h2 style="margin-top: 300px">Silver Sponsors</h2>
-            <div class="container col-sm-12">
-                <div class="col-sm-3 img-container">
-                    <a  style="width: 100%;" href="http://www.nationalrailmuseum.co.uk/">
-                        <img style="width: 50%;" src="img/index/nrmwhite.png"/>
-                    </a>
-                </div>
-                <div class="col-sm-3 img-container">
-                    <a  style="width: 100%;" href="http://www.networkrail.co.uk/">
-                        <img style="width: 100%;" src="img/index/logo-networkrail.png"/>
-                    </a>
-                </div>
-                <div class="col-sm-3 img-container">
-                    <a  style="width: 100%;" href="http://www.nationalrail.co.uk/">
-                        <img style="width: 100%;" src="img/index/logo-nre.png"/>
-                    </a>
-                </div>
-                <div class="col-sm-3 img-container">
-                    <a  style="width: 100%;" href="http://nomad-digital.com/">
-                        <img style="width: 100%;" src="img/index/logo-nomad.png"/>
-                    </a>
-                </div>
-              </div>
-          </div>
-        <div style="padding-top:200px;" class="container col-lg-8 col-lg-offset-2">
-            <h2>Transport Sponsors</h2>
-            <div class="container col-sm-12">
-                <div class="col-sm-6 img-container">
-                    <a  style="width: 100%;" href="http://www.eastmidlandstrains.co.uk/">
-                        <img style="width: 100%;" src="img/index/logo-emt.png"/>
-                    </a>
-                </div>
-                <div class="col-sm-6 img-container">
-                    <a  style="width: 100%;" href="http://www.virgintrainseastcoast.com/">
-                        <img style="width: 70%;" src="img/index/logo-VTEC.png"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section id="partners" class="container-wide content-section text-center">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2> TRANSPORT PARTNERS</h2>
-
-            </div>
-        </div>
-    </section> -->
-
-    <section id="partners" class="container-wide content-section text-center organisational container">
-        <div class="row">
-          <div class="col-md-6">
-              <h2>Partners</h2>
-              <div class="container col-sm-6">
-                  <div class="col-sm-12 img-container">
-                      <a  style="width: 80%;" href="http://github.com/plans">
-                          <img style="width: 80%;" src="img/index/github-logo.png"/>
-                      </a>
-                  </div>
-              </div>
-              <div class="container col-sm-6">
-                  <div class="col-sm-12 img-container">
-                      <a  style="width: 40%;" href="http://bynifty.com/">
-                          <img style="width: 40%;" src="img/index/logo-nifty.png"/>
-                      </a>
-                  </div>
-              </div>
-              <div class="container col-sm-6">
-                  <div class="col-sm-12 img-container">
-                      <a  style="width: 100%;" href="http://www.meetup.com/UK-Hackathons-and-Jams/">
-                          <img style="width: 100%;" src="img/index/hackathonsandjams-logo.png"/>
-                      </a>
-                  </div>
-              </div>
-              <div class="container col-sm-6">
-                  <div class="col-sm-12 img-container">
-                      <a  style="width: 100%;" href="http://clarity.pr/">
-                          <img style="width: 100%;" src="img/index/logo-clarity.png"/>
-                      </a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-6">
-              <h2> ORGANISATIONAL PARTNERS</h2>
-              <div class="container col-sm-12">
-                  <div class="col-sm-4 img-container">
-                      <a href="http://www.york.gov.uk/">
-                          <img class="img-responsive" src="img/index/logo-york.png"/>
-                      </a>
-                  </div>
-                  <div class="col-sm-4 img-container">
-                      <a href="http://scy.co.uk/">
-                          <img class="img-responsive" style="width:50%; margin:0 auto" src="img/index/logo-scy.png"/>
-                      </a>
-                  </div>
-                  <div class="col-sm-4 img-container">
-                      <a href="https://productforge.io">
-                          <img class="img-responsive" style="padding-top:40px" src="img/index/productforge.png"/>
-                      </a>
-                  </div>
-                  <div class="col-sm-6 img-container">
-                      <a href="http://www.dotforgeaccelerator.com/">
-                          <img class="img-responsive" style="margin: 0 auto; padding-top:30px; width:80%" src="img/index/logo-dotforge.png"/>
-                      </a>
-                  </div>
-                  <div class="col-sm-6 img-container">
-                      <a href="http://hackaglobal.com/">
-                          <img class="img-responsive" src="img/index/logo-hg.png"/>
-                      </a>
-                  </div>
-              </div>
-          </div>
-        </div>
-    </section>
-    <!-- <section id="speakers" class="content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Speakers</h2>
-                <p>The people speaking.</p>
-                <p>The people speaking.</p>
-                <p>The people speaking.</p>
-                <p>The people speaking.</p>
-                <p>The people speaking.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="judges" class="content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Judges</h2>
-                <p>The people judging.</p>
-                <p>The people judging.</p>
-                <p>The people judging.</p>
-                <p>The people judging.</p>
-                <p>The people judging.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="trainhackers" class="content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>The 2015 TrainHackers</h2>
-                <p>The people participating.</p>
-                <p>The people participating.</p>
-                <p>The people participating.</p>
-                <p>The people participating.</p>
-                <p>The people participating.</p>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="journey" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-               <h1>THE JOURNEY</h1>
-               <!-- <h4>To be announced in:</h4>
-                <div class="clock" style="margin: auto auto;width: 650px"></div> -->
-            </div>
-        </div>
-    </section>
-
-    <div class="container col-lg-10 col-lg-offset-1">
-        <div id="timeline" class="timeline-container">
-            <button id="upper-timeline-toggle" class="timeline-toggle">+ expand all</button>
-
-            <br class="clear">
-
-            <div class="timeline-wrapper">
-                <h2 class="timeline-time"><span>27th March - The Launch +</span></h2>
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="1-1" class="timeline-event"><a>16:45 - Registration & Dinner+</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="1-1EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-launch2.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>The journey will begin with a massive launch event in London - Top players from the London tech and startup ecosystem, great speakers and incredible surprises. Even if you will not participate in the HackTrain, this is an event you do not want to miss!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="1-2" class="timeline-event"><a>17:20 - Event Starts +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="1-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-trainpitch.jpg" />
-                        </div>
-                        <blockquote>
-                            <p>The HackTrain hackathon will officially kick-off!</p>
-                        </blockquote>
-                        <blockquote>
-                            <p>We'll have talks from some of our amazing sponsors, high-profile keynote speakers and a welcome speech by the organisers!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="1-2" class="timeline-event"><a>17:40 - API Demos, Challenges, Keynote Speakers & Media Enagement +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="1-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-trainpitch.jpg" />
-                        </div>
-                        <blockquote>
-                            <p>There will be an opportunity for interviews, pictures and networking with the Hackers, designers and entrepreneurs before they hop on the HackTrain. Challenges for the hackathon will also be set along with demos of APIs and data sets available</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="1-2" class="timeline-event"><a>19:55 - All aboard the HackTrain! +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="1-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-trainpitch.jpg" />
-                        </div>
-                        <blockquote>
-                            <p>The TrainHackers will hop on the train and will have an opportunity to pitch their epic ideas whilst on the road to Sheffield to one of the top coworking spaces in the UK. Team formation workshops will take place, and by the time we arrive to Sheffield, everyone will be ready to ROCK!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="1-3" class="timeline-event"><a>22:00 - Arrival at Sheffield +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="1-3EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-launch.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>Amazing speakers and incredible mentors will receive all the TrainHackers at Sheffield with open arms. Teams will receive a few crash-courses and mini-workshops on things that will be essential to aid success throughout the rest of the event, and even throughout their entrepreneurial career!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="1-4" class="timeline-event"><a>23:00+ - Late night surprises +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="1-4EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-hackathon.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>OWe have loads of surprises planned for the whole journey at the train hackathon! You will not want to miss any of these!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="1-6" class="timeline-event"><a>00:00 - Sleep Time at a hotel +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="1-6EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-surprise.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>Chance to recuperate your energy in preparation for the 36 hours ahead!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-            </div>
-
-
-            <div class="timeline-wrapper">
-                <h2 class="timeline-time"><span>28th March - All on board the HackTrain +</span></h2>
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="2-1" class="timeline-event"><a>09:00 - HackTrain to York +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="2-1EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-train.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>TrainHackers will be jump in the Hacktrain to head to the beautiful city of York! Like always, we will have a few surprises and mentors on board to maximize the short journey!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="2-2" class="timeline-event"><a>13:00 - Tech Workshops +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="2-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-tech.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>We will be making sure that only the best technology is available for all the TrainHackers at the journey! Wearable gadgets like Google Glass, Oculus Rift, between many others will be available, and any extra equipment you might require can certainly be requested - we'll do our best to get everything you need to rock this event!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="2-2" class="timeline-event"><a>15:00 - Hacking at the Museum +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="2-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-oldtrain.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>If you think this just can't get any more epic, the National Transport museum has allowed us to host our hackathon inside their premises! TrainHackers will be building software inside the most prestigious historical trains! How cool is that!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="2-2" class="timeline-event"><a>17:35 - HackTrain to Edinburgh +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="2-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-journey.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>Everyone will hop on board the HackTrain once again on the road to Edinburgh to one of the best coworking spaces in the city! Upon arrival, mentors will be ready to help out in anything required!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="2-2" class="timeline-event"><a>20:15 - Arrive in Edinburgh! +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="2-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-redbull.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>We will have food and drinks once we arrive at Edinburgh! Teams will be able to stay up all night working on their products! More surprises will be available for the hackers to make it through the last night! It will be an amazing, exhausting and rewarding adventure!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-            </div>
-
-
-
-            <div class="timeline-wrapper">
-                <h2 class="timeline-time"><span>29th March - Final Day Begin</span></h2>
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="3-1" class="timeline-event"><a>08:00 - Early Breakfast +</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="3-1EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-breakfast.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>Last day of the event! Massive breakfast will be provided - fuel will be required for this intense and rewarding day!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="3-2" class="timeline-event"><a>10:30 - HackTrain to York!</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="3-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-trainhack.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>TrainHackers will be getting ready for another journey to rock the finals of the HackTrain event! The finals and closing event will take place at the national York Train museum!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="3-2" class="timeline-event"><a>14:30 - Tech Check on Rails!</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="3-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-coworking2.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>Tech check will begin! TrainHackers will be able to make sure that their technology works correctly, and their demos work as expected. This will be your chance to ensure a perfect final presentation!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="3-2" class="timeline-event"><a>16:00 - Final Presentations!</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="3-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-finals.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>Final presentations will begin! TrainHackers will be showing the mind blowing startups they created throughout the intense journey.</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-                <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="3-2" class="timeline-event"><a>17:30 - Judging and Announcements!</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="3-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-flights.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>The winners of the 2014 HackTrain will be announced! Prizes will be given to the winning teams, as well as final announcements and closing words. After the announcements we'll all depart home, with an insane but rewarding experience.</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-                 <dl class="timeline-series">
-                    <span class="tick tick-before"></span>
-                    <dt id="3-2" class="timeline-event"><a>18:30 - HackTrain officially closes!</a></dt>
-                    <span class="tick tick-after"></span>
-                    <dd class="timeline-event-content" id="3-2EX">
-                        <div class="media">
-                            <img class="journey-img" src="img/index/journey-flights.jpg" />
-                        </div>
-
-                        <blockquote>
-                            <p>HackTrain 2015 wil come to a close!</p>
-                        </blockquote>
-
-                    <br class="clear">
-                    </dd>
-                </dl>
-
-            </div>
-
-            <button class="timeline-toggle">+ expand all</button>
-
-            <br class="clear">
-
-        </div>
-
+        <div style="clear: both;"></div>
     </div>
 
 
-    <section id="prizes" class="container content-section text-center">
-        <div id="type-form-parent" class="row">
-            <img width="100%" src="img/index/prizes.png" />
+    <div style="clear: both; width: 100%; height: 200px"></div>
+
+    <div class="container col-lg-8 col-lg-offset-2" style="text-align: center;">
+        <h1>HackTrain Cycle</h1>
+        <hr/>
+
+        <div style="clear: both; width: 100%;"></div>
+    </div>
+
+        <div style="clear: both; width: 100%; height: 20px;"></div>
+
+    <p>
+        <h2 style="text-align: center; width: 100%">
+        The HackTrain has a proven <i style="color:#219ab3;font-size:1.5em;">3-step process </i>
+        <br>
+        to introduce <i style="color:#219ab3;font-size:1.5em;"> tech innovations</i> to the railway industry.</h2>
+    </p>
+    
+    <div style="clear: both; width: 100%; height: 50px"></div>
+
+    
+    <div style="
+    width:  100%;
+    text-align: center;
+    clear: both">      
+        <a id="apply" class="btn btn-default" style="font-size: 50px; text-align: center; margin: auto auto" href="https://www.youtube.com/watch?v=lFTGZnouRzo">Read the HackTrain case study</a>
+    </div>
+
+    <div style="clear: both; width: 100%; height: 100px"></div>
+
+
+    <div class="process-container" id="innovation-process">
+        
+        <div class="process-item col-lg-4">
+            
+            <div class="process-background" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/index/hth.jpg);"></div>
+
+            <div class="process-number">
+                1
+            </div>
+
+            <div class="process-title">
+                HackTrain Hackathon
+            </div>
+            <div class="process-description">
+                An immersive 48-hour event that brings together 120 top developers, designers and entrepreneurs from around the world. Participants work throughout a weekend building websites, apps and software that solve problems in the railway industry.
+            </div>
+        </div>
+        <div class="process-item col-lg-4">
+            
+            <div class="process-background" style="background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(img/index/trials.jpg);"></div>
+
+            <div class="process-number">
+                2
+            </div>
+
+            <div class="process-title">
+                RailTech Accelerator
+            </div>
+            <div class="process-description">
+                We find early-stage technology companies that already solve challenges similar to the ones in rail, but in different industries. We provide them with funding, connections, and an accelerated opportunity to run trials in trains, stations apps and websites.
+            </div>
+        </div>
+        <div class="process-item col-lg-4">
+            
+            <div class="process-background" style="background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(img/index/dt2.jpg);"></div>
+
+            <div class="process-number">
+                3
+            </div>
+
+            <div class="process-title">
+                Digital Transformation
+            </div>
+            <div class="process-description">
+                We take successful accelerator trials to the next step through digital transformation projects. By pipelining multiple technologies, and partnering with system integrators, the HackTrain delivers industry-wide and network-wide projects.
+            </div>
+        </div>
+
+        <div style="clear: both;width: 100%;"></div>
+    </div>
+
+
+    <div style="clear: both; width: 100%; height: 200px"></div>
+
+    <div class="container col-lg-8 col-lg-offset-2" style="text-align: center;">
+        <h1>B.A.R.R.I.E.R.S. Report</h1>
+        <hr/>
+
+        <div style="clear: both; width: 100%;"></div>
+    </div>
+
+        <div style="clear: both; width: 100%; height: 20px;"></div>
+
+    <p>
+        <h2 style="text-align: center; width: 100%">
+        The HackTrain has released the <i style="color:#219ab3;font-size:1.5em;">B.A.R.R.I.E.R.S.</i> report
+        <br>
+        which outlines 5 key <i style="color:#219ab3;font-size:1.5em;"> barriers</i> to rail innovation
+        <br>
+        together with 11 key <i style="color:#219ab3;font-size:1.5em;"> recommendations</i>.</h2>
+    </p>
+    
+    <div style="clear: both; width: 100%; height: 50px"></div>
+
+    
+    <div style="
+    width:  100%;
+    text-align: center;
+    clear: both">      
+        <a id="apply" class="btn btn-default" style="font-size: 50px; text-align: center; margin: auto auto" href="http://report.hacktrain.com">Read the B.A.R.R.I.E.R.S. report</a>
+    </div>
+
+
+    <section id="sponsors" class="content-section text-center">
+        <div style="width: 90%; margin: auto auto;" class="row">
+            <div class="container col-md-8 col-md-offset-2">
+                <h1>Partners</h1>
+                <hr/>
+                <br>
+                <br>
+
+                <div class="container col-sm-12">
+
+
+                    <div style="margin-top: 50px" class="col-xs-12 img-container">
+
+                        <div class="col-xs-4 img-container">
+                          <a href="https://www.gov.uk/government/organisations/department-for-transport">
+                            <img alt="Department for Transport" style="margin: auto auto" class="img-responsive" src="img/index/dft.png"/>
+                          </a>
+                        </div>
+
+                        <div class="col-xs-4 img-container">
+                          <a href="https://www.gov.uk/government/organisations/high-speed-two-limited">
+                            <img alt="High speed rail" style="margin: auto auto" class="img-responsive" src="img/sponsors/logo-hs2.png"/>
+                          </a>
+                        </div>
+
+                        <div class="col-xs-4 img-container">
+                          <a href="https://www.gov.uk/government/organisations/department-for-transport">
+                            <img alt="Smart Rail" style="margin: auto auto" class="img-responsive" src="img/sponsors/logo-bis.png"/>
+                          </a>
+                        </div>
+
+                        <div style="clear: both; width: 100%; height: 100px;"></div>
+
+                        <div class="col-xs-4 img-container">
+                          <a href="#">
+                            <img alt="BAE Systems" style="margin: auto auto" class="img-responsive" src="img/accel-sponsors/bae.png"/>
+                          </a>
+                        </div>
+
+                        <div class="col-xs-4 img-container">
+                          <a href="#">
+                            <img alt="EY" style="width: 70%; margin: auto auto" class="img-responsive" src="img/accel-sponsors/ey.png"/>
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-4">
+                            <a alt="Osborne Clarke" style="width: 100%;" href="#">
+                                <img style="width: 70%;" src="img/accel-sponsors/oc.png"/>
+                            </a>
+                        </div>
+                        <div style="clear: both; width: 100%; height: 100px;"></div>
+
+                        <div alt="TechCity UK" class="col-xs-4 img-container">
+                            <a alt="Tech City UK" style="width: 100%;" href="http://www.techcityuk.com/">
+                                <img style="width: 60%; margin: auto auto;" src="http://www.techcityuk.com/wp-content/themes/techcityuk/img/logo.png"/>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-4 img-container">
+                          <a href="http://smartrailworld.com">
+                            <img alt="Smart Rail" style="margin: auto auto" class="img-responsive" src="img/index/smart-rail-world1.png"/>
+                          </a>
+                        </div>
+
+                        
+                        <div class="col-xs-4">
+                            <a alt="Novacroft" style="width: 100%;" href="http://www.novacroft.com/">
+                                <img style="width: 100%;" src="img/accel-sponsors/nc.png"/>
+                            </a>
+                        </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section id="team" class="container-wide content-section text-center">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Team</h2>
-                <div class="organizer col-md-3 col-sm-4">
-                    <a href="https://www.linkedin.com/in/rivertam"><img src="img/index/river.jpg" alt="River Tam"/></a>
-                    <h2 itemprop="name">River Tamoor Baig<br></h2>
-                    <ul itemprop="description" class="organizer-description">
-                        <li>Has won 9 out of 10 hackathons attended.</li>
-                        <li>Programme Manager at Dotforge Accelerator.</li>
-                        <li>Launched Europe's first invitation only hackathon and was Conductor of StartupBus UK 2014</li>
-                    </ul>
+    <section id="sponsor" class="content-section text-center">
+        <div style="width: 90%; margin: auto auto;" class="row">
+            <div class="container col-lg-8 col-lg-offset-2">
+                <h1>Our Clients</h1>
+                <hr/>
+              
+            <div class="container col-sm-12">
+                
+                <div style="clear: both; margin-bottom: 100px"></div>
 
-                    <ul class="banner-social-buttons col-sm-12">
-                        <li class="col-sm-12">
-                            <a href="mailito:river@dotforge.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">river@dotforge.com</span></a>
-                        </li>
-                    </ul>
+                <div class="col-xs-4 img-container">
+                  <a href="http://www.firstgroupplc.com/">
+                    <img alt="First group" style="width: 80%;margin: auto auto" class="img-responsive" src="img/sponsors/fg.png"/>
+                  </a>
                 </div>
-                <div class="organizer col-md-3 col-sm-4">
-                    <a href="http://www.linkedin.com/pub/alejandro-saucedo/41/6b3/4b0"><img src="img/index/alejandro.jpg" alt="Alejandro Saucedo"/></a>
-                    <h2 itemprop="name">Alejandro Saucedo</h2>
-                    <ul itemprop="description" class="organizer-description">
-                        <li>Has organized 20+ hackathons around the world.</li>
-                        <li>Founder at HackaGlobal and Software Developer at Bloomberg LP.</li>
-                        <li>Had the opportunity to discss entrepreneurial matters with PM David Cameron, and later on with the Duke of York.</li>
-                    </ul>
-
-                    <ul class="banner-social-buttons col-sm-12">
-                        <li class="col-sm-12">
-                            <a href="mailito:axsauze@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">axsauze@gmail.com</span></a>
-                        </li>
-                    </ul>
-                    </ul>
+                <div class="col-xs-4 img-container">
+                  <a href="http://www.stagecoach.com/">
+                    <img alt="Stagecoach group" style="width: 100%;margin: auto auto" class="img-responsive" src="img/sponsors/stagecoach.png"/>
+                  </a>
                 </div>
-                <div class="organizer col-md-3 col-sm-4">
-                    <a href="https://www.linkedin.com/profile/view?id=200767245"><img src="img/index/kosta.jpg" alt="Kosta Kolev"/></a>
-                    <h2 itemprop="name">Kostadin Kolev</h2>
-                    <ul itemprop="description" class="organizer-description">
-                        <li>Organized a multinational hackathon.</li>
-                        <li>Managed multiple international events.</li>
-                        <li>Analyst at Accenture.</li>
-                    </ul>
-
-                    <ul class="banner-social-buttons col-sm-12">
-                        <li class="col-sm-12">
-                            <a href="mailito:kikyou56k@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">kolev1993@gmail.com</span></a>
-                        </li>
-                    </ul>
+                <div class="col-xs-4 img-container">
+                  <a href="http://www.arriva.co.uk/">
+                    <img alt="Arriva Group" style="width: 100%;margin: auto auto" class="img-responsive" src="img/sponsors/arriva.png"/>
+                  </a>
                 </div>
-                <div class="organizer col-md-3 col-sm-4">
-                    <a href="https://www.facebook.com/sally.kuok?fref=ts"><img src="img/index/sally.jpg" alt="Sally Kuok"/></a>
-                    <h2 itemprop="name">Sally Kuok</h2>
-                    <ul itemprop="description" class="organizer-description">
-                        <li>Winner of the Startup Weekend Sheffield.</li>
-                        <li>AIESEC Leader.</li>
-                    </ul>
-
-                    <ul class="banner-social-buttons col-sm-12">
-                        <li class="col-sm-12">
-                            <a href="mailito:kikyou56k@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">kikyou56k@gmail.com</span></a>
-                        </li>
-                    </ul>
+                <div class="col-xs-4 img-container">
+                  <a href="http://www.go-ahead.com/en/index.html">
+                    <img alt="GoAhead" style="width: 100%;margin: auto auto" class="img-responsive" src="img/sponsors/go-ahead.png"/>
+                  </a>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="organizer col-md-3 col-sm-4">
-                    <a href="https://www.linkedin.com/profile/view?id=75914299"><img src="img/index/ian-small.jpg" alt="Ian Graham"/></a>
-                    <h2 itemprop="name">Ian Graham<br></h2>
-                    <ul itemprop="description" class="organizer-description">
-                        <li>Has ran several hackathons ranging from youth engagement to library innovation.</li>
-                        <li>Head of Innovation at York City Council.</li>
-                        <li>Co-designed the city’s multi-award-winning “GeniUS!” open innovation platform leading a number of creative/hackathon style events.</li>
-                    </ul>
-
-                    <ul class="banner-social-buttons col-sm-12">
-                        <li class="col-sm-12">
-                            <a href="mailito:ian.graham@york.gov.uk" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">ian.graham@york.gov.uk</span></a>
-                        </li>
-                    </ul>
+                <div class="col-xs-4 img-container">
+                  <a href="http://www.c2c-online.co.uk/">
+                    <img alt="National Express" style="width: 100%;margin: auto auto" class="img-responsive" src="img/sponsors/nx.png"/>
+                  </a>
                 </div>
-                <div class="organizer col-md-3 col-sm-4">
-                    <a href="https://www.linkedin.com/profile/view?id=59612588"><img src="img/index/heather.jpg" alt="Heather Niven"/></a>
-                    <h2 itemprop="name">Heather Niven</h2>
-                    <ul itemprop="description" class="organizer-description">
-                        <li>Has ran various startup events across Yorkshire</li>
-                        <li>Innovation Lead at Science City York.</li>
-                        <li>Has helped organisations become more innovative through building capacity, infrastructure development and support for collaboration.
-</li>
-                    </ul>
-
-                    <ul class="banner-social-buttons col-sm-12">
-                        <li class="col-sm-12">
-                            <a href="mailito:heather.niven@scy.co.uk" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">heather.niven@scy.co.uk</span></a>
-                        </li>
-                    </ul>
-                    </ul>
+                <div alt="SilverRail Technologies" class="col-xs-4 img-container">
+                    <a alt="SilverRail Technologies" target="_blank" style="width: 100%;" href="http://silverrailtech.com/">
+                        <img style="width: 100%;" src="img/sponsors/logo-silverrail.png"/>
+                    </a>
                 </div>
-                <div class="organizer col-md-3 col-sm-4">
-                    <a href="https://www.linkedin.com/profile/view?id=54482694"><img src="img/index/charles.jpg" alt="Charles Storr"/></a>
-                    <h2 itemprop="name">Charles Storr</h2>
-                    <ul itemprop="description" class="organizer-description">
-                        <li>Organized a multinational hackathon.</li>
-                        <li>Enterprise Manager at York City Council.</li>
-                        <li>Seasoned professional working in local government providing strategic support to local businesses.</li>
-                    </ul>
-
-                    <ul class="banner-social-buttons col-sm-12">
-                        <li class="col-sm-12">
-                            <a href="mailito:charles.storr@york.gov.uk" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">charles.storr@york.gov.uk</span></a>
-                        </li>
-                    </ul>
+                <div alt="Trailine" class="col-xs-4 img-container">
+                    <a alt="Trailine" style="width: 100%;" href="http://trainline.com" target="_blank">
+                        <img style="width: 100%;" src="img/sponsors/logo-trainline.png"/>
+                    </a>
                 </div>
-                <div class="organizer col-md-3 col-sm-4">
-                    <a href="https://www.linkedin.com/profile/view?id=31013825"><img src="img/index/allan.jpg" alt="Allan Lloyd"/></a>
-                    <h2 itemprop="name">Allan Lloyd</h2>
-                    <ul itemprop="description" class="organizer-description">
-                        <li>Former Startup Weekend Glasgow Organiser.</li>
-                        <li>Founder at Product Forge.</li>
-                        <li>Organised several hackathons with various themes including open data and sustainability.</li>
-                    </ul>
-
-                    <ul class="banner-social-buttons col-sm-12">
-                        <li class="col-sm-12">
-                            <a href="mailito:allan@productforge.io" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">allan@productforge.io</span></a>
-                        </li>
-                    </ul>
+                <div alt="ATOC" class="col-xs-4 img-container">
+                    <a alt="National Rail Enquiries" target="_blank" style="width: 100%;" href="http://atoc.org">
+                        <img style="width: 80%;" src="img/sponsors/logo-atoc.png"/>
+                    </a>
+                </div>
+                <div alt="Eversholt" class="col-xs-4 img-container">
+                    <a alt="Eversholt" target="_blank" style="width: 100%;" href="http://eversholtrail.co.uk">
+                        <img style="width: 100%;" src="img/sponsors/logo-eversholt.png"/>
+                    </a>
+                </div>
+                <div alt="Nomad Digital" class="col-xs-4 img-container">
+                    <a alt="Nomad Digital" target="_blank" style="width: 100%;" href="http://nomad-digital.com/">
+                        <img style="width: 100%;" src="img/index/logo-nomad.png"/>
+                    </a>
+                </div>
+                <div alt="IBM" class="col-xs-3 img-container">
+                    <a alt="IBM" target="_blank" style="width: 100%;" href="http://www.ibm.com/">
+                        <img style="width: 100%;" src="img/sponsors/logo-ibm-white.jpg"/>
+                    </a>
+                </div>
+                <div alt="Bloomberg" class="col-xs-4 img-container">
+                    <a alt="Bloomberg" target="_blank" style="width: 100%;" href="http://www.bloomberglabs.com/">
+                        <img style="width: 100%;" src="img/index/logo-bloomberg.png"/>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <br><br><br><br><br><br>
-
-    <!-- <div id="map"></div> -->
 
     <script src="js/external/jquery.js"></script>
 
@@ -875,9 +531,13 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-58935240-1', 'auto');
+
+      ga('create', 'UA-65616946-2', 'auto');
       ga('send', 'pageview');
+
     </script>
+
+
 
     <!-- Custom Trainhacks JavaScript -->
     <script src="js/index/index.js"></script>

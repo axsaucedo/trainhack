@@ -1,13 +1,40 @@
+body {
+  overflow-x: hidden
+}
+html {
+  overflow-x: hidden;
+}
 .container-wide {
   width: 99%;
 }
 
+.videoWrapper {
+  position: fixed;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/img/index/ht.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -99;
+}
+
 #about {
-    padding-top: 100px;
+    padding-top: 30px;
 }
-#journey {
-    margin-bottom: 350px;
+#about .img-container {
+  height: 70px;
+
 }
+#about .img-container img {
+  width: 100%;
+  max-height: 50px;
+
+}
+
 #timeline {
   margin-top: -300px;
   margin-bottom: 150px;
@@ -18,18 +45,23 @@
 }
 
 #player-wrapper {
-	position: fixed;
-	z-index: -99;
-	filter: sepia(100%);
-	-webkit-filter: sepia(100%);
-	background: black;
-	opacity: 0.4;
 }
 
 #player {
 	position: fixed;
 	z-index: -99;
 	display: none;
+}
+
+#typeform-full {
+  display: none;
+  width: 100%;
+  height: 600px;
+}
+
+#gadgets .img-responsive {
+  max-height: 150px;
+  margin-top: 100px;
 }
 
 .social-buttons-list {
@@ -79,6 +111,97 @@
     height: 200px;
   }
 
+.ht-main-description,
+  .trainhacker-description {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+  .process-number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    border: 6px solid #fff;
+    border-radius: 80px;
+    font-weight: 900;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+  }
+  .process-container {
+      width: 100%; 
+      background: black;
+      clear: both;
+      position: relative;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+  }
+  .process-item {
+      height: 500px;
+      position: relative;
+      padding: 0 0 0 0;
+  }
+  .process-background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-position: center;
+      background-size: cover;
+
+      transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+  }
+  .process-title {
+      font-size: 50px;
+      position:absolute; 
+      top: 85%; 
+      height: 10em; 
+      margin-top: -5em;
+      width: 100%;
+      opacity: 1;
+
+      transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+  }
+  .process-description {
+      opacity: 0;
+      font-size: 25px;
+      position:absolute; 
+      top:50%; 
+      height:10em; 
+      margin-top:-5em;
+      padding: 0 20px 0 20px;
+
+      transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+
+  }
+  .process-item:hover .process-background {
+      top: -10px;
+      bottom: -10px;
+      right: -10px;
+      left: -10px;
+  }
+  .process-item:hover .process-title {
+      opacity: 0;
+  }
+  .process-item:hover .process-description {
+      opacity: 1;
+  }
+
 
 .team {
   position: relative;
@@ -93,3 +216,162 @@
     display: table; }
   .team:after {
     clear: both; }
+
+    /*HACKATHONS*/
+    #hackathons .img-container {
+
+      height: 150px;
+    }
+
+
+  /* WINNERS */
+
+    #winners {
+        background-color: rgba(0,0,0,.5);
+        width: 100%;
+        height: 100%;
+    }
+    .clear {
+        clear: both;
+    }
+    .prize-header-container {
+        position: relative;
+        height: 500px; 
+        z-index: 0;
+        padding: 100px 0px 50px 0px;
+        overflow: hidden;
+    }
+    .prize-header-text {
+        width: 100%;
+        height: 100%;
+        vertical-align: bottom;
+        text-align: center;
+        color: black;
+        font-size: 4em;
+       -webkit-text-stroke-width: 2px;
+       -webkit-text-stroke-color: white;
+    }
+    .prize-img {
+        background-size: cover; 
+        background-position: 100% 100%;
+    }
+    .prize-header-img {
+        background-image: url(../img/2015/hacktrain-2015-winners.jpg);
+        height: 100%;
+        width: 100%; 
+        background-size: cover; 
+        background-position: 100% 20%;
+        filter: blur(5px);
+        -webkit-filter: blur(3px);
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
+    .prize-description {
+        text-align: center;
+    }
+
+
+  body {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  section {
+    clear: both;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  #schedule {
+    margin-bottom: 100px;
+  }
+  #schedule .tab-content .col-md-3 {
+    border-top: 5px solid white;
+    padding: 20px;
+  }
+  #schedule .tab-content .col-md-9 {
+    border-top: 1px solid gray;
+    padding: 20px;
+  }
+  #schedule .tab-content .title {
+    font-size: 25px;
+  }
+  #schedule .tab-content .subtitle {
+    font-size: 15px;
+  }
+  #schedule .tab-content p {
+    margin-bottom: 0px;
+  }
+  #schedule .tab-content .time {
+    font-size: 15px;
+
+  }
+  #schedule .schedule-title {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+  }
+  li[role="presentation"] {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+
+section[name="prizes"] {
+
+  -moz-transform: scale(0.9999);
+  border-bottom: 90px solid transparent;
+  border-top: 90px solid transparent;
+  box-sizing: content-box;
+}
+
+section[name="prizes"] h1 {
+  text-align: center;
+}
+
+section[name="prizes"] h4 {
+  padding: 30px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+section[name="prizes"] img {
+  background-color: #383838;
+  border-radius: 50%;
+  border: 1px solid #383838;
+}
+
+section[name="prizes"] .gadget {
+  padding-bottom: 25px;
+}
+
+section[name="prizes"] .main img {
+  width: 150px;
+  height: 150px;
+}
+
+section[name="prizes"] .gadget img {
+  width: 135px;
+  height: 135px;
+}
+
+section[name="prizes"] p.name {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+section[name="prizes"] p.desc {
+  font-weight: 300;
+  font-size: 15px;
+  max-width: 220px;
+  opacity: 0.8;
+}
+
+#sponsor .img-container {
+  height: 200px;
+}
+
+#speakers .speaker-description {
+  text-align: left;
+}
+
+
+
